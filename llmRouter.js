@@ -78,9 +78,8 @@ ${transcript}`
     llmReply=extractJsonFromText(llmReply)
     llmReply=sanitizeDependencies(llmReply)
     llmReply=markBlockedIfCycle(llmReply)
-    return [
-       llmReply
-    ];
+    return llmReply
+    
 }
 
 function extractJsonFromText(raw) {
